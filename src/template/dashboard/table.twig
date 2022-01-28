@@ -249,7 +249,7 @@ function update_transaction_data(data)
                 data[i]['txid'] = 'Unknown transaction id (Swept Transaction)';
             }
             
-            finaltxdata += 'href="https://xmrchain.net/search?value=' + data[i]['txid'] + '">' + data[i]['txid'] + '</a>';
+            finaltxdata += 'href="https://blockexplorer.lozzax.xyz/search?value=' + data[i]['txid'] + '">' + data[i]['txid'] + '</a>';
             if(data[i]['payment_id'] != '0000000000000000')
             {
                finaltxdata += '<br><span style="font-size: 10px; color: #C9C9C9;">#' + data[i]['payment_id'] + '</span>'; 
@@ -260,7 +260,7 @@ function update_transaction_data(data)
                 datashowconfirm = "&#10004;";
             }
             finaltxdata += '<td data-label="Mixin" data-i18n-key="table_mixin" data-i18n-name="data-label"><div class="data-mixin">' + datashowconfirm + '</div></td>';
-            finaltxdata += '<td data-label="Value XMR" data-i18n-key="table_value_xmr" data-i18n-name="data-label" class="column-right"><div class="data-value">';
+            finaltxdata += '<td data-label="Value LOZZ" data-i18n-key="table_value_xmr" data-i18n-name="data-label" class="column-right"><div class="data-value">';
             if(data[i]['type'] == 'in')
             {
                 finaltxdata += '+';
@@ -294,7 +294,7 @@ function update_transaction_data(data)
             finalpendingtxdata += '<td><a target="_blank" ';
             finalpendingtxdata += 'class="payment-pool" ';
             
-            finalpendingtxdata += 'href="https://xmrchain.net/search?value=' + data[i]['txid'] + '">' + data[i]['txid'] + '</a>';
+            finalpendingtxdata += 'href="https://blockexplorer.lozzax.xyz/search?value=' + data[i]['txid'] + '">' + data[i]['txid'] + '</a>';
             if(data[i]['payment_id'] != '0000000000000000')
             {
                finalpendingtxdata += '<br><span style="font-size: 10px; color: #C9C9C9;">#' + data[i]['payment_id'] + '</span>'; 

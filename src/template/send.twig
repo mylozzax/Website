@@ -1,7 +1,7 @@
 {% set page_name = "send" %}
 {% set isLogin = true %}
 {% set isShowBalance = true %}
-{% set page_title = "Send Monero | xmrwallet.com" %}
+{% set page_title = "Send Lozzax | lozzax.xyz" %}
 
 {% extends "layout/dashboard.twig" %}
 
@@ -22,7 +22,7 @@
             Confirmation
         </div>
         <div class="dashboard-dialog-body">
-            <div class="dashboard-dialog-value">{{ i("transferring") }} <strong id="confirm_xmr"></strong> XMR {{ i("to") }}:</div>
+            <div class="dashboard-dialog-value">{{ i("transferring") }} <strong id="confirm_xmr"></strong> LOZZ {{ i("to") }}:</div>
             <div class="dashboard-dialog-value-id" id="confirm_address" style="word-wrap: break-word; color: #D95700;"></div>
             <div class="dashboard-dialog-value-id" id="confirm_pid" style="word-wrap: break-word; color: #A1A1A1; font-size: 12px;"></div>
         </div>
@@ -52,7 +52,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label class="label">XMR Amount</label>
+                        <label class="label">LOZZ Amount</label>
                         <div class="input-group input-group--monero">
                             <input id="send_xmr" oninput="setsendingmaxxmr(0)" type="text" class="form-control" placeholder="0"/>
                             <div class="svg svg--monero-white" style="margin-top: 2px;"></div>
@@ -389,7 +389,7 @@
 
                 if(!transaction_address)
                 {
-                    alert("Invalid Monero address");
+                    alert("Invalid Lozzax address");
                     sendpayment();
                     return;
                 }
@@ -439,7 +439,7 @@
                 }
                 catch (e)
                 {
-                   alert(transaction_address + " is an invalid Monero address");
+                   alert(transaction_address + " is an invalid Lozzax address");
                    sendpayment();
                    return;
                 }

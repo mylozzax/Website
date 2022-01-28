@@ -2543,12 +2543,12 @@ return{_strlen:lb,_ge_mul8:Va,_keccak:db,_ge_scalarmult:Ta,_ge_fromfe_frombytes_
 
 
 var moneroConfig = {
-    coinUnitPlaces: 12,
+    coinUnitPlaces: 9,
     txMinConfirms: 10,
-    coinSymbol: 'XMR',
-    openAliasPrefix: "xmr",
-    coinName: 'Monero',
-    coinUriPrefix: 'monero:',
+    coinSymbol: 'LOZZ',
+    openAliasPrefix: "lozz",
+    coinName: 'Lozzax',
+    coinUriPrefix: 'lozzax:',
     addressPrefix: 18,
     integratedAddressPrefix: 19,
     feePerKB: new JSBigInt('2000000000'),
